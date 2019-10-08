@@ -13,11 +13,13 @@
         input : text 예제 
         <br>
         <br>
-        <input type="text" placeholder="아이디" name="id">
+        <input type="text" placeholder="아이디" name="id" required>
         <!-- placeholder 속성 : 실제 인풋창에 어떠한 내용을 입력해야하는지 
         미리 문자로 보여 주는 기능 -->
-        <input type='text' value="아이디">
+        <!-- required : 필수항목으로 표시 -->
+        <input type='text' value="아이디" readonly>
         <!-- value 속성 :  실제 값을 미리 입력하는 속성 -->
+        <!-- readonly : 읽기 전용. ex)회원정보 수정에서 아이디를 표시는 해주지만 수정할 수 없게 함.  -->
         <input type="text" name="" id="">
         <!-- input 태그에서 
         name 속성 : 서버로 데이터를 보낼 때 보내지는 이름
@@ -53,8 +55,91 @@
         <br>
         type을 지정 안한 버튼 태그 예제 <br><br>
         <button>제출 </button>
-        
-
+        <br>
+        <br>
+        <br>
+        체크 박스 예제<br><br>
+        당신이 좋아하는 과일은?(다중 선택 가능)<br>
+        <input type="checkbox" name="fruit" value="apple">사과
+        <input type="checkbox" name="fruit" value="orange">오렌지
+        <br>
+        <br>
+        <br>
+        색상 예제 <br><br>
+        <input type="color" name="color">
+        <br>
+        <br>
+        <br>
+        시간 예제<br><br>
+        <input type="month"><br>
+        <input type="week"><br>
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <input type="time">
+        <!-- JQuery 플러그인인 datepicker을 많이 사용 -->
+        <br>
+        <br>
+        <br>
+        이메일 예제<br><br>
+        <input type="email" name="email">
+        <!-- 새로운 텍스트로 유효성검사가 뜨게 하려면 JQuery나 자바 사용 -->
+        <br>
+        <br>
+        <br>
+        파일 예제<br><br>
+        <input type="file" name="file">
+        <br>
+        <br>
+        <br> 
+        히든 예제 : 안 보이지만 input 태그가 있습니다.<br><br>
+        <input type="hidden" name="" value="123">
+        <br>
+        <br>
+        <br> 
+        이미지 예제<br><br>
+        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo1PfeYijBZNUUlyihyG7uY_ToNjf04iFO6udns5FpNRMI9-0y7A" alt="그림 없음">
+        <!-- img 태그를 많이 사용 -->
+        <br>
+        <br>
+        <br> 
+        number 예제<br><br>
+        <input type="number" >
+        <br>
+        <br>
+        <br>
+        password 예제<br><br>
+        <input type="password">
+        <br>
+        <br>
+        <br>
+        라디오 예제<br><br>
+        <input type="radio" name="gender" value="m" checked>남자
+        <input type="radio" name="gender" value="f">여자
+        <br>
+        <br>
+        <input type="radio" name="gender1" value="m" checked id="male">
+        <lable for="male">남자</lable>
+        <input type="radio" name="gender1" value="f" checked id="female">
+        <lable for="female">여자</lable>
+        <!-- name을 똑같이 주는 것이 중요.
+        checked 입력하면 체크가 되어서 나옴. -->
+        <br>
+        <br>
+        <br>
+        url 예제<br><br>
+        <input type="url">
+        <!-- input 태그의 email, url 등은 유효성검사가 나타남
+        기타 방법으로는 JQuery와 자바스크립트를 이용한 방법이 있음.  -->
+        <br>
+        <br>
+        <br>
+        search 예제<br><br>
+        <input type="search">
+        <br>
+        <br>
+        <br>
+        range 예제<br><br>
+        <input type="range">
     </form>
 </body>
 </html>
