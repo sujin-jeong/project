@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ul 사용법</h2>
+    <!-- type의 종류 : dist(기본), square, circle
+    리스트 단일로 사용할 때는 type 상관 없음.
+    리스트 안에 또 다른 리스트를 생성할 경우 dist가 아닌 circle 이 기본. dist는 사용 못 함. -->
+    <h3>type 설정</h3>
+    과일
+    <ul>
+        <li>사과</li>
+        <li>배 </li>
+        <li>포도 </li>
+    </ul>
+
+    <ul type="square">
+            <li>사과</li>
+            <li>배 </li>
+            <li>포도 </li>
+    </ul>
+    <ul type="circle">
+            <li>사과</li>
+            <li>배 </li>
+            <li>포도 </li>
+    </ul>
+    
+    <h3># 사용법</h3>
+    <ul>
+            <li><a href="#"></a></li>
+            <!-- 아직 주소가 정해지지 않아서 a 태그 효과는 주지만 이동시키지는 않을 때 # 입력 -->
+    </ul>
+
+    <h3>하위 리스트 생성</h3>
+    <ul>
+            <li>사과</li>
+            <li>배 </li>
+            <li>포도 </li>
+            <ul>
+                    <li>영동 포도</li>
+                    <li>xx 포도</li>
+                </ul>
+    </ul>
+    <br><br>
+    <h2>ol 사용법</h2>
+    <!-- type : 1(기본), i, I, A, a
+    start : 시작 번호 설정
+    reversed : 역순으로 지정 -->
+    <h3>type 설정</h3>
+    오늘의 할일
+    <ol>
+        <li>수업</li>
+        <li>점심</li>
+    </ol>
+    <ol type="i">
+            <li>수업</li>
+            <li>점심</li>
+    </ol>
+    <ol type="I">
+            <li>수업</li>
+            <li>점심</li>
+    </ol>
+    <ol type="A">
+            <li>수업</li>
+            <li>점심</li>
+    </ol>
+    <ol type="a">
+            <li>수업</li>
+            <li>점심</li>
+    </ol>
+    <h3>start 사용</h3>
+    <ol start="3">
+            <li>수업</li>
+            <li>점심</li>
+    </ol>
+    <h3>reversed 사용</h3>
+    <ol reversed>
+            <li>수업</li>
+            <li>점심</li>
+    </ol>
+<!-- 리스트 태그는 주로 네비게이션에서 많이 사용.(홈페이지 메뉴들)
+    가로로는 자바로 변경. 일반적으로 ul 많이 사용. block 태그. -->
+    
+</body>
+</html>
