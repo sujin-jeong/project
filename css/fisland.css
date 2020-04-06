@@ -1,0 +1,317 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+i{
+    cursor: pointer;
+}
+.container{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+body{
+    position: relative;
+    min-width: 1583px;
+}
+
+/* header */
+.header{
+    background-color: white;
+    width: 100%;
+    height: 157px;
+    border-top: 2px solid #40b5e1;
+    border-bottom: 1px solid #eeeeee ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header_top{
+    height: 37px;
+}
+.hd_t_item{
+    float: right;
+    cursor: default;
+}
+.hd_t_text{
+    line-height: 30px;
+    color: #828282;
+    font-size: 11px;
+    float: left;
+}
+.hd_tt{
+    color: #828282;
+    font-family: Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+
+}
+.hd_tt:hover{
+    text-decoration: underline;
+}
+.hd_t_icon{
+    float: right;
+}
+.hd_ti{
+    padding: 6px 13px;
+}
+.hd_ti>img{
+    cursor: pointer;
+}
+.logo{
+    float: left;
+    cursor: pointer;
+}
+.nav{
+    float: right;
+}
+.menu{
+    padding: 0 15px;
+    height: 102px;
+    border-right: 1px solid #eeeeee;
+    float: left;
+    text-align: center;
+}
+.menu:last-child{
+    border-right: none;
+}
+.menu_title{
+    font-size: 18px;
+    color: #666666;
+    cursor: default;
+    font-weight: 700;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.menu_title1{
+    color: #32acdb;
+}
+
+.menu_sub_a{
+    font-size: 12px;
+    color: #666666;
+    font-family: 'NanumBarunGothic', sans-serif;
+    font-weight: 700;
+    opacity: 0.6;
+}
+.menu_sub_a:hover{
+    border-bottom: 1px solid #40b5e1;
+}
+.menu_sub{
+    margin-bottom: -3px;
+}
+.menu_sub_click{
+    color: #40b5e1;
+
+}
+
+
+/* body */
+.body{
+    margin-top: 155px;
+}
+.body_img{
+    width: 100%;
+}
+.main{
+    width: 100%;
+}
+.body_item_box{
+    width: 1000px;
+    height: 250px;
+    position: absolute;
+    top:-365px;
+    left: 0;
+}
+.body_item{
+    width: 250px;
+    height: 125px;
+    z-index: 10;
+    float: left;
+    padding: 23px 15px 20px 20px;
+    cursor: pointer;
+}
+.bd_item_text{
+    float: left;
+}
+.bd_item_img{
+    float: right;
+}
+.bd_item_img:hover{
+    filter: grayscale(100%);
+}
+.item1{
+    background-color: #32acdb;
+}
+.item2{
+    background-color: #4bc2b7;
+}
+.item3{
+    background-color: #db6132;
+}
+.item4{
+    background-color: #665759;
+}
+.bd_item_title{
+    font-size: 16px;
+    color: white;
+    font-family: 'NanumBarunGothic', sans-serif;
+    font-weight: 700;
+}
+.bd_item_sub{
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 14px;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.body_item_opa{
+    width: 250px;
+    height: 150px;
+    z-index: 10;
+    float: left;
+    padding: 20px 0 20px 15px;
+}
+.item5{
+    background-color: white;
+    opacity: 0.9;
+    
+}
+.bd_opa_text{
+    font-size: 15px;
+    color: #2b2b2a;
+    font-family: 'NanumBarunGothic', sans-serif;
+    font-weight: 700;
+    float: left;
+    margin-top: 2px;
+    cursor: default;
+}
+.bd_opa_bar{
+    height: 1px;
+    width: 138px;
+    background-color: #a4a4a4;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.view{
+    cursor: pointer;
+}
+.bd_ul{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.bd_li{
+    font-size: 5px;
+    color: #555555;
+    font-family: Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    position: relative;
+    height: 20px;
+}
+
+.qna_li>span{
+    font-size: 11px;
+    color: #a4a4a4;
+    font-family: Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    position: absolute;
+    top: -1px;
+    right: 15px;
+}
+.notice_li>span{
+    font-size: 11px;
+    color: #a4a4a4;
+    font-family: Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    position: absolute;
+    top: -1px;
+    right: 3px;
+}
+.bd_li_a{
+    margin-left: -3px;
+    font-size: 11px;
+    font-family: Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    color: #555555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 165px;
+    line-height: 19px;
+    position: absolute;
+    top: -4px;
+}
+.bd_li_a:hover{
+    text-decoration: underline;
+}
+.item6{
+    width: 500px;
+    background-color: white;
+    opacity: 0.9;
+    padding: 20px 20px 20px 20px;
+}
+.bd_opa_bar1{
+    height: 1px;
+    width: 360px;
+    background-color: #a4a4a4;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.bd_item6_img{
+    padding: 14px 0;
+}
+.bd_item6_img>img{
+    cursor: pointer;
+    margin-right: 4px;
+}
+.bd_item6_img>img:hover{
+    opacity: 0.5;
+}
+.item7{
+    background-color: white;
+    opacity: 0.9;
+    padding-left: 2px;
+    
+}
+
+
+
+/* footer */
+.footer{
+    height: 126px;
+}
+.footer_left{
+    float: left;
+    padding: 40px 10px;
+}
+
+.footer_right{
+    float: right;
+    text-align: right;
+    padding: 45px 0;
+    cursor: default;
+}
+.footer_info{
+    font-weight: 700;
+    font-size: 11px;
+    font-family: 'NanumBarunGothic', sans-serif;
+    color:#828282;
+    line-height: 18px;
+}
+.footer_copy{
+    font-size: 9.6px;
+    color: #828282;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 3px;
+}

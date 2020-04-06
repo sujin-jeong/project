@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700|Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/voyage.css">
+    <script src="https://kit.fontawesome.com/58edaa3f81.js" crossorigin="anonymous"></script>  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/voyage.js"></script>
+    <title>voyage</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="header_top_box agent_box">
+                    <a href="#" class="agent">
+                        <i class="fas fa-user"></i>
+                        Agent Login</a>
+                </div>
+                <div class="header_top_box customer_box">
+                    <a href="#" class="customer">
+                        <i class="fas fa-user"></i>
+                        Customer Login</a>
+                </div>
+                <div class="header_top_box member_box">
+                    <a href="#" class="not_a_member">
+                        <i class="far fa-file"></i>
+                        Not a Member? <span>Register</span>
+                    </a>
+                </div>
+                <div class="header_top_box call_box">
+                    <a href="#" class="call">Call Us Now:815-123-4567</a>
+                </div>
+                <div class="header_top_right">
+                    <div class="header_top_box_r">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="header_top_box_r">
+                        <i class="fab fa-tumblr"></i>
+                    </div>
+                    <div class="header_top_box_r">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="header_top_box_r">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav">
+            <div class="container">
+                <div class="nav_left">
+                    <a href="#" class="logo"><img src="img/voyage/logo.gif"></a>
+                </div>
+                <div class="nav_right">
+                    <a href="#" class="nav_item home mint">HOME  </a>
+                    <a href="#" class="nav_item destinations">DESTINATIONS</a>
+                    <a href="#" class="nav_item criuses">CRIUSES</a>
+                    <a href="#" class="nav_item speclals">SPECLALS</a>
+                    <a href="#" class="nav_item holydays">HOLYDAYS</a>
+                    <a href="#" class="nav_item blog">BLOG</a>
+                </div>
+                <a href="#" class="search"><img src="img/voyage/search.gif"> </a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_box swiper-containe">
+            <div class="main_img swiper-wrapper">
+                <img src="img/voyage/main_opa.gif" class="swiper-slide">
+                <img src="img/voyage/main_opa2.png" class="swiper-slide">
+                <img src="img/voyage/main_opa3.png" class="swiper-slide">
+                <img src="img/voyage/main_opa4.png" class="swiper-slide">
+            </div>
+            <div class="main_swiper">
+                <div class="swiper_btn swiper-button-prev main_prev">
+                    <i class="fas fa-angle-left "></i>
+                </div>
+                <div class="swiper_btn swiper-button-next main_next">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="main_text">
+                <div class="text_b">TO TRAVEL IS TO LIVE</div>
+                <div class="text_s">You Don't Need Magic to Disappear. All you need is a destination.</div>
+            </div>
+            <div class="main_btn">
+                <button class="map_btn">SHOW ON THE MAP</button>
+                <button class="more_btn">MORE INFO</button>
+            </div>
+        </div>
+        <div class="main_bot">
+            <div class="container">
+                <div class="holydays_box">
+                    <div class="find_text">FIND YOUR</div>
+                    <div class="holydays_text">HOLYDAYS</div>
+                </div>
+                <form class="main_select">
+                    <div class="main_bot_box where">
+                        <span>Where</span>
+                        <input type="text" class="distination" placeholder="  distination">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="main_bot_box when">
+                        <span>When</span>
+                        <input type="text" class="select_date" placeholder="  select date" data-toggle="datepicker" > 
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <button class="main_search_btn">Search</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body_top">
+            <div class="bd_t_title">
+                <div class="bd_t_title_main">SPECIAL OFFERS</div>
+                <div class="bd_t_title_sub">Best 2014 packages where people love to stay!</div>
+            </div>
+            <div class="bd_t_box swiper-con">
+                <div class="bd_t_con swiper-wrapper">
+                    <div class="bd_t_item swiper-slide">
+                        <img src="img/voyage/top_img1.png" class="bd_t_img">
+                        <div class="bd_t_item_t">
+                            <div class="bd_t_text">
+                                <p class="bd_t_text1">statue of liberty - USA</p>
+                                <p class="bd_t_text2">New Destination!</p>                                  
+                            </div>
+                            <div class="bd_t_icon">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd_t_item swiper-slide">
+                        <img src="img/voyage/top_img2.png" class="bd_t_img">
+                        <div class="bd_t_item_t">
+                            <div class="bd_t_text">
+                                <p class="bd_t_text1">Spectacular Seychelles</p>
+                                <p class="bd_t_text2">New Destination!</p>                               
+                            </div>
+                            <div class="bd_t_icon">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd_t_item swiper-slide">
+                        <img src="img/voyage/top_img3.png" class="bd_t_img">
+                        <div class="bd_t_item_t">
+                            <div class="bd_t_text">
+                                <p class="bd_t_text1">Hong Kong & Macau</p>
+                                <p class="bd_t_text2">Bonus Extras!</p>                                                                
+                            </div>
+                            <div class="bd_t_icon">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd_t_item swiper-slide">
+                        <img src="img/voyage/top_img4.png" class="bd_t_img">
+                        <div class="bd_t_item_t">
+                            <div class="bd_t_text">
+                                <p class="bd_t_text1">Vietnam Highlights</p>
+                                <p class="bd_t_text2">New Destination!</p>                                                                
+                            </div>
+                            <div class="bd_t_icon">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd_t_item swiper-slide">
+                        <img src="img/voyage/top_img5.png" class="bd_t_img">
+                        <div class="bd_t_item_t">
+                            <div class="bd_t_text">
+                                <p class="bd_t_text1">Spectacular Seychelles</p>
+                                <p class="bd_t_text2">New Destination!</p>                                   
+                            </div>
+                            <div class="bd_t_icon">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd_t_item swiper-slide">
+                        <img src="img/voyage/top_img6.png" class="bd_t_img">
+                        <div class="bd_t_item_t">
+                            <div class="bd_t_text">
+                                <p class="bd_t_text1">Dubai</p>
+                                <p class="bd_t_text2">New Destination!</p>                          
+                            </div>
+                            <div class="bd_t_icon">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_mid">
+            <div class="bd_m_img">
+                <img src="img/voyage/body_mid.gif">
+            </div>
+            <div class="bd_m_title">
+                <div class="bd_m_title_main">HOLYDAYS TYPE</div>
+                <div class="bd_m_title_sub">get explore your dream to travel the world!</div>
+            </div>
+            <div class="bd_m_icon">
+                <div class="icon_name cruise">
+                    <img src="img/voyage/mid_icon1.png" class="mid_icon cruise_icon">
+                    <img src="img/voyage/mid_icon1_1.png" class="mid_icon_click cruise_icon_click display_none">
+                    <div class="mid_name">Cruise</div>
+                </div>
+                <div class="icon_name city">
+                    <img src="img/voyage/mid_icon2.png" class="mid_icon city_icon">
+                    <img src="img/voyage/mid_icon2_1.png" class="mid_icon_click city_icon_click display_none">
+                    <div class="mid_name">City Breaks</div>
+                </div>
+                <div class="icon_name honeymoon">
+                    <img src="img/voyage/mid_icon3.png" class="mid_icon honeymoon_icon">
+                    <img src="img/voyage/mid_icon3_1.png" class="mid_icon_click honeymoon_icon_click display_none">
+                    <div class="mid_name">Honeymoon</div>
+                </div>
+                <div class="icon_name adventure">
+                    <img src="img/voyage/mid_icon4.png" class="mid_icon adventure_icon">
+                    <img src="img/voyage/mid_icon4_1.png" class="mid_icon_click adventure_icon_click display_none">
+                    <div class="mid_name">Adventure</div>
+                </div>
+                <div class="icon_name safari">
+                    <img src="img/voyage/mid_icon5.png" class="mid_icon safari_icon">
+                    <img src="img/voyage/mid_icon5_1.png" class="mid_icon_click safari_icon_click display_none">
+                    <div class="mid_name">Safari</div>
+                </div>
+                <div class="icon_name beach">
+                    <img src="img/voyage/mid_icon6.png" class="mid_icon beach_icon">
+                    <img src="img/voyage/mid_icon6_1.png" class="mid_icon_click beach_icon_click display_none">
+                    <div class="mid_name">Beach</div>
+                </div>
+            </div>
+        </div>
+        <div class="body_bot">
+            <div class="bd_b_title">
+                <div class="bd_b_title_main">Happy Clients</div>
+                <div class="bd_b_title_sub">what customer say about us and why love our services!</div>
+            </div>
+            <div class="bd_b_box swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="bd_b_con swiper-slide">
+                        <img src="img/voyage/bot_2.png" class="bd_b_item">
+                        <p class="bd_b_item_text1">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+                        </p>
+                        <p class="bd_b_item_text2">Client Name</p>
+                        <p class="bd_b_item_text3">United States</p>
+                    </div>
+                    <div class=" bd_b_con swiper-slide">
+                        <img src="img/voyage/bot_2.png" class="bd_b_item">
+                        <p class="bd_b_item_text1">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+                        </p>
+                        <p class="bd_b_item_text2">Client Name</p>
+                        <p class="bd_b_item_text3">United States</p>
+                    </div>
+                    <div class="bd_b_con swiper-slide">
+                        <img src="img/voyage/bot_2.png" class="bd_b_item">
+                        <p class="bd_b_item_text1">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+                        </p>
+                        <p class="bd_b_item_text2">Client Name</p>
+                        <p class="bd_b_item_text3">United States</p>
+                    </div>
+                    <div class="bd_b_con swiper-slide">
+                        <img src="img/voyage/bot_2.png" class="bd_b_item">
+                        <p class="bd_b_item_text1">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+                        </p>
+                        <p class="bd_b_item_text2">Client Name</p>
+                        <p class="bd_b_item_text3">United States</p>
+                    </div>
+                    <div class="bd_b_con swiper-slide">
+                        <img src="img/voyage/bot_2.png" class="bd_b_item">
+                        <p class="bd_b_item_text1">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+                        </p>
+                        <p class="bd_b_item_text2">Client Name</p>
+                        <p class="bd_b_item_text3">United States</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ft_top">
+            <div class="container">
+                <div class="ft_t_box ft_item1">
+                    <div class="ft_t_title">
+                        Newsletter 
+                    </div>
+                    <div class="ft_t_text ft_text1 ">
+                        Duis autem vel eum iriure dolor in<br>
+                        hendrerit in vulputate velit esse <br>
+                        molestie consequat, vel illum dolore.
+                    </div>
+                    <form class="ft_t_search_box">
+                        <input type="text" placeholder="  Subscribes..." class="ft_t_search">
+                        <button class="ft_t_go">GO</button>
+                    </form>
+                </div>
+                <div class="ft_t_box ft_item2">
+                    <div class="ft_t_title">
+                        Latest News
+                    </div>
+                    <div class="ft_t_text ft_text2">
+                        <div class="ft_text2_item">
+                            <div class="ft_text2_img">
+                                <img src="img/voyage/ft_text2_img1.png">
+                            </div>
+                            <div class="text2_t_box">
+                                <div class="ft_text2_text_w">
+                                    Postformat Gallery: Multiple <br>images
+                                </div>
+                                <div class="ft_text2_text_m">
+                                    October 21, 2013 - 3:31 pm
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ft_text2_item">
+                            <div class="ft_text2_img">
+                                <img src="img/voyage/ft_text2_img2.png">
+                            </div>
+                            <div class="text2_t_box">
+                                <div class="ft_text2_text_w">Snowboarding is fun!</div>
+                                <div class="ft_text2_text_m">December 12, 2012 - 9:11 pm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft_t_box ft_item3">
+                    <div class="ft_t_title">
+                        Tags
+                    </div>
+                    <div class="ft_t_text ft_text3">
+                        <div class="text3_item">Agent Login</div>
+                        <div class="text3_item">Customer Login</div>
+                        <br>
+                        <div class="text3_item">Not a Member?</div>
+                        <div class="text3_item">Contact</div>
+                        <br>
+                        <div class="text3_item">New Horizons</div>
+                        <div class="text3_item">Lanscape</div>
+                        <div class="text3_item">Tags</div>
+                        <br>
+                        <div class="text3_item">Nice</div>
+                        <div class="text3_item">Some</div>
+                        <div class="text3_item">Portrait</div>
+                    </div>
+                </div>
+                <div class="ft_t_box ft_item4">
+                    <div class="ft_t_title">
+                        Address
+                    </div>
+                    <div class="ft_t_text ft_text4">
+                        DieSachbearbeiter Schönhauser Allee <br> 167c,10435 Berlin Germany<br>
+                        <span>E-mail:</span> moin@blindtextgenerator.de
+                    </div>
+                    <div class="link">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-tumblr"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="ft_bot">
+            <div class="ft_b_menu_box">
+                <span class="ft_b_menu ft_b_home mint">Home</span>  
+                <span>::</span>  
+                <span class="ft_b_menu ft_b_desti">Destinations</span>
+                <span>::</span> 
+                <span class="ft_b_menu ft_b_criuses">Criuses</span>  
+                <span>::</span>  
+                <span class="ft_b_menu ft_b_specils">Specils</span>
+                <span>::</span>  
+                <span class="ft_b_menu ft_b_holidays">Holidays</span>  
+                <span>::</span>  
+                <span class="ft_b_menu ft_b_blog">Blog</span>
+                <span>::</span> 
+                <span class="ft_b_menu ft_b_us">Contact Us</span> 
+            </div>
+            <div class="copy">
+                Copyright @voyage. All Right Reserved.
+            </div>
+            <a href="#">
+                <img src="img/voyage/height_top.png" class="icon_box">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
