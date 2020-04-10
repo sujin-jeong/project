@@ -81,6 +81,25 @@ $(function(){
         slidesPerView: 5,
         spaceBetween: 30,
         freeMode: true,
+        breakpoints: {
+          900: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1600: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1700: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+
+        }
       });
       
       var swiper = new Swiper('.swiper-containe', {

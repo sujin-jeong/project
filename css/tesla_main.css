@@ -41,24 +41,31 @@ body {
 /* header */
 header{
 	z-index: 30;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left:0;
-	width: 100%;
+	width:100%;
+	height: 52px;
 }
 header img{
-	position: fixed;
-	width: 80px;
+	width: 5%;
 	height:auto;
 	margin: 20px;
 	float:left;
 }
 .navbox{
 	position: relative;
-	top: 16px;
-	left:30%;
-	width: 1000px;
-
+	width: 88%;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+}
+.navboxIn{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	float: left;
+	
 }
 .navli{
 	display:inline-block;
@@ -73,19 +80,14 @@ header img{
 header a{
 	color:#fff;
 }
-.login{
-	float:right;
-	margin-right: 80px;
-	font-size:14px;
-	margin-top: -4px;
-}
+
 
 
 /*  */
 .main_text{
 	z-index: 100;
 	position: absolute;
-	top: 120px;
+	top: 160px;
 	left: 0;
 	width: 100%;
 	text-align: center;
@@ -106,7 +108,6 @@ header a{
 .main3_text{
 	z-index: 100;
 	position: absolute;
-	top: 300px;
 	left: 0;
 }
 .main_btn button{
@@ -139,20 +140,23 @@ header a{
 .title_text3{
 	position: absolute;
 	top:0;
-	right: 600px;
+	right: calc(50% - 25.5%);
+	width: 200px;
 }
 .title_text1{
+	width: 200px;
 	position: absolute;
 	top:0;
-	left: 600px;
+	left: calc(50% - 25.5%);
 }
 .title_text2-1{
-	width: 400px;
-	margin-left: 588px;
+	width: 200px;
+	margin-left: calc(50% - 5%);
 }
 .title_text2-2{
-	width: 400px;
-	margin-left: 500px;
+	width: 200px;
+	margin-left: 50%;
+
 }
 
 /* main1 */
@@ -177,10 +181,11 @@ header a{
 /*  */
 .main2{
 	position: absolute;
-	top: 789px;
+	top: 100%;
 	left: 0;
 	overflow: hidden;
-	height: 789px;
+	width: 100%;
+	height: 100%;
 	z-index: 20;
 }
 .hero-video{
@@ -193,11 +198,12 @@ header a{
 /*  */
 .main3{
 	position: absolute;
-	top: 1367px;
+	top: 200%;
 	left: 0;
-	height: 1000px;
 	z-index: 10;
 	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
 .main3 img{
 	width: 100vw;
@@ -208,15 +214,15 @@ header a{
 /*  */
 .main4{
 	position: absolute;
-	top: 2367px;
+	top: 300%;
 	left: 0;
-	height: 789px;
 	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
 .main4 img{
 	width: 100vw;
 	height: auto;
-	margin-top: -160px;
 }
 .footer{
 	position: absolute;
@@ -309,42 +315,6 @@ header a{
 
 
 /*  */
-.underBtn{
-	width: 25px;
-	height: 25px;
-	position: fixed;
-	top: 750px;
-	left: 48%;
-	cursor: pointer;
-	z-index: 30;
-}
-
-.underBtn div:first-child{
-	width: 15px;
-	height: 2px;
-	background-color: #fff;
-	transform: rotate(45deg);
-	position: relative;
-	top: 10px;
-	float: left;
-}
-.underBtn div:last-child{
-	width: 15px;
-	height: 2px;
-	background-color: #fff;
-	transform: rotate(135deg);
-	position: relative;
-	top: 8px;
-	left: 10px;
-	float: left;
-}
-
-
-
-
-
-
-/*  */
 .opacity-0{
 	opacity: 0;
 }
@@ -365,4 +335,23 @@ header a{
 }
 .center{
 	text-align: center;
+}
+
+
+@media screen and (max-width:1650px){
+	.main2{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		z-index: 20;
+	}
+	.hero-video{
+		width: auto;
+		height:100%;
+		object-fit: cover;
+	}
+
 }

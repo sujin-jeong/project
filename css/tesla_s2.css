@@ -1,26 +1,92 @@
 @charset 'utf-8';
 
-@media screen and (max-width:1150px){
-	.navboxIn{
-		width: 90%;
+@media screen and (max-width:1700px){
+	.main1_sub{
+		width: 40%;
+	}
+	.annotations{
+    right: 22%;
+    top: -10%;
+	}
+	.protection{
+			top: 18%;
+	}
+}
+@media screen and (max-width:1650px){
+	.annotations{
+		right: 22%;
+		top: -20%;
+}
+	.protection{
+		top: 26%;
+		height: 14%;
+}
+	.collision{
+		height: 25%;
+		top: 30%;
+	}
+	.danger{
+		height: 16%;
+		left: 64%;
+		top: 58%;
+	}
+	.main9_sOrder span{
+		font-size: 22px;
+	}
+	.main4_left{
+		left: 14%;
+	}
+}
+@media screen and (max-width:1500px){
+	.protection{
+		top: 25%;
+		height: 14%;
+}
+	.collision{
+		height: 24%;
+		top: 30%;
+	}
+	.danger{
+		height: 16%;
+		left: 64%;
+		top: 54%;
+	}
+
+}
+@media screen and (max-width:1350px){
+	.protection{
+		top: 23%;
+		height: 14%;
+}
+	.collision{
+		height: 16%;
+		top: 33%;
+	}
+	.danger{
+		height: 16%;
+		left: 64%;
+		top: 49%;
+	}
+	.main9_sOrder span{
+		font-size: 18px;
+	}
+	.hero-video{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+	}
+	.main1_sub{
+			width : calc(100% / 2);
+	}
+	.main1_order {
+		width: 10%;
+		float: right;
 	}
 
 }
 
-@media screen and (max-width:975px){
-	.navboxIn{
-		width: 100%;
-	}
-	.fff_boxIn{
-		width: 100%;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
 
 
-
-
-}
 
 @media screen and (max-width:1200px){
 	/* main2 */
@@ -40,13 +106,14 @@
 		display: none;
 	}
 	.collision{
+		height: 28%;
 		left: 32%;
-		top: 32%;
+		top: 44%;
 	}
 	.protection{
 		height: 22%;
 		left: 61%;
-		top: 12%;
+		top: 30%;
 	}
 	.protection span{
 		position: absolute;
@@ -60,30 +127,66 @@
 	}
 	.danger span{
 		position: absolute;
-		top: 90%;
+		top: 86%;
 		left: 10px;
 	}
-
-
-
-
-
 	.main4_left{
 		width: 100%;
 		position: absolute;
 		top: 58%;
-		left: 16%;
+		left: 0;
 	}
 	.main4L_box{
-		width: 100%;
-		height: auto;
 		display: flex;
 		position: relative;
 		margin : 0 auto;
 	}
+	.main3_top{
+    width: 100%;
+	}
+	.main3T_box{
+		width: 80%;
+	}
+
 }
 
+@media screen and (max-width:1150px){
+	.navboxIn{
+		width: 90%;
+	}
+	.main1_bot{
+		margin-left: 110px;
+	}
+	.main1_sub{
+		width : calc(100% / 2);
+		margin: 0;
+	}
+	.main1_sub .main1S {
+		padding: 0 10px;
+	}
+	.main1_order {
+		width: 0%;
+	}
 
+
+}
+@media screen and (max-width:975px){
+	.navboxIn{
+		width: 100%;
+	}
+	.fff_boxIn{
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.main3_top{
+    width: 100%;
+	}
+	.main3T_box{
+		width: 95%;
+	}
+
+}
 @media screen and (max-width:640px){
 	picture>img{
     object-position: center 35%;
@@ -94,7 +197,6 @@
 	.login{
 		margin: 14px;
 	}
-
 	/* main1 */
 	.main1_title{
 		position: absolute;
@@ -116,8 +218,9 @@
 		width: 70%;
 		position: absolute;
 		top: 66%;
-		left: 2%;
+		left: 0%;
 		text-align: center;
+		margin-left: 0;
 	}
 	.main1_sub{
 		width : 90%;
@@ -157,8 +260,6 @@
 		top: 92%;
 		left: 46%;
 	}
-
-
 	/* main2 */
 	.annotation{
 		font-size: 12px;
@@ -188,18 +289,14 @@
 		left: 10px;
 	}
 
-
-	
 	/* main3 */
 	.fff_boxB{
 		height: 300px;
 	}
 
 	.main3_top{
-		width: 100%;
-		position: absolute;
 		top: 50%;
-		left: 16%;
+		left: 0%;
 	}
 	.main3T_box{
 		width: 100%;
@@ -211,6 +308,9 @@
 	.main3_bot{
 		width: 100%;
 		height: 220px;
+	}
+	.km_title{
+		text-align: center;
 	}
 	.main3_img{
 		width: 100%;
@@ -245,7 +345,4 @@
 		display: block;
 		text-align: center;
 	}
-
-
-
 }

@@ -11,7 +11,7 @@ $(function(){
 	
 	setTimeout(function(){
 	
-		$('.parallax-bg').animate({width:'210%','margin-left':'-865px'},1000,function(){
+		$('.parallax-bg').animate({width:'210%','margin-left':'-54.5%'},1000,function(){
 			
 			var swiper = new Swiper('.swiper-container', {
 				speed: 600,
@@ -36,17 +36,17 @@ $(function(){
 							$('.title_text2-1').removeClass('opacity-0')
 							if(swiper.previousIndex == 0 && !swiperBegin){
 								$('.title_text2-1 .title_text').addClass('right')
-								$('.title_text2-1').animate({'margin-left':'470px'})
+								$('.title_text2-1').animate({'margin-left':'44%'})
 							}else if(swiper.previousIndex == 2 && !swiperBegin){
 								$('.title_text2-1').addClass('display_none')
 								$('.title_text2-2').removeClass('display_none')
-								$('.title_text2-2').animate({'margin-left':'590px'})
+								$('.title_text2-2').animate({'margin-left':'45%'})
 							}
 						}
 						else if(swiper.activeIndex == 0){
 							$('.main_btn2 button:last-child').removeClass('display_none')
 							$('.title_text1').removeClass('opacity-0')
-							$('.title_text1').animate({'margin-left':'110px'})
+							$('.title_text1').animate({'margin-left':'20%'})
 							$('.title_text2-1').addClass('opacity-0')
 							$('.title_text2-1').removeClass('display_none')
 							$('.title_text3').addClass('opacity-0')
@@ -55,7 +55,7 @@ $(function(){
 						else{
 							$('.main_btn2 button:last-child').removeClass('display_none')
 							$('.title_text3').removeClass('opacity-0')
-							$('.title_text3').animate({'margin-right':'110px'})
+							$('.title_text3').animate({'margin-right':'20%'})
 							$('.title_text2-1').addClass('opacity-0')
 							$('.title_text2-1').removeClass('display_none')
 							$('.title_text1').addClass('opacity-0')
@@ -63,7 +63,7 @@ $(function(){
 						}
 						swiperBegin = false;
 					}
-				}
+				},
 			});
 			$('.parallax-bg').css('margin-left','0px')
 			swiper.slideTo(1,0)
@@ -88,8 +88,6 @@ $(function(){
 	},function(){
 		$(this).find('.navLeft_label').addClass('display_none')
 	})
-
-
 
 
 	// 스크롤 섹션이동
@@ -123,6 +121,7 @@ $(function(){
 		$("html,body").stop().animate({scrollTop:pos});
 	})
 	$('.navLeft_tap').eq(0).click();
+
 
 
 

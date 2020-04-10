@@ -52,10 +52,10 @@ $(function(){
 	})
 
 
-	$('.img-holder').imageScroll({
-		container: $('.container_3')
+	// $('.img-holder').imageScroll({
+	// 	container: $('.container_3')
 
-	});
+	// });
 
 
 	$('.botB_infoT').click(function(){
@@ -85,9 +85,7 @@ $(function(){
 			$(this).text('리뷰를 작성해주세요');
 		}
 	})
-	$(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-	});
+
 	
 	swiper4 = new Swiper('.swiper-container3', {
 		slidesPerView: 4,

@@ -138,15 +138,16 @@ picture>img{
 
 /* 3등분 박스 */
 .container{
-    padding: 10px 30px 0 30px;
     opacity: 0;
+    width: calc(100% / 3);
 }
-.container:first-child{
-    padding: 10px 30px 0 0;
+.container1{
+    padding: 5px 30px 0 0;
 }
 .container2{
     border-left : 1px solid #fff;
     border-right : 1px solid #fff;
+    padding: 5px 30px 0 30px;
 }
 
 .container .titleB{
@@ -231,25 +232,26 @@ header{
     top: 0;
     left:0;
     width:100%;
+    height: 52px;
 }
 header img{
-    width: 80px;
+    width: 5%;
     height:auto;
     margin: 20px;
     float:left;
 }
 .navbox{
     position: relative;
-    top: 16px;
-    width: calc(100% - 200px);
-    margin: 0 auto;
+    width: 88%;
     float: left;
+    text-align: center;
+    padding-top: 20px;
 }
 .navboxIn{
-    width: 75%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
-    float: right;
+    float: left;
     
 }
 .navli{
@@ -264,12 +266,6 @@ header img{
 }
 header a{
     color:#fff;
-}
-.login{
-    float:right;
-    margin-right: 80px;
-    font-size:14px;
-    margin-top: -4px;
 }
 
 /* main1 */
@@ -286,9 +282,11 @@ header a{
     object-fit: cover;
 }
 .main1_title{
+    width: 162px;
+    height: 73px;
     position: absolute;
     top: 24%;
-    left: 44%;
+    left: calc(50% - 80px);
     text-align : center;
     color:#fff;
     height: 73px;
@@ -309,14 +307,14 @@ header a{
 
 .main1_bot{
     min-width:100%;
-    width: 60%;
+    width: 100%;
     position: absolute;
     top: 78%;
     left: 0;
     text-align: center;
 }
 .main1_sub{
-    width : 640px;
+    width : calc(100% / 3);
     height: auto;
     align-content: center;
     align-items: stretch;
@@ -557,13 +555,15 @@ header a{
 .main3_top{
     min-width:100%;
     width: 60%;
+    height: 70px;
     position: absolute;
     top: 58%;
     left: 0;
+
 }
 .main3T_box{
     width: 60%;
-    height: auto;
+    height: 70px;
     display: flex;
     position: relative;
     margin : 0 auto;
@@ -587,13 +587,16 @@ header a{
 .sub640{
     display: none;
 }
+.container3{
+    padding: 5px 30px 0 30px;
+}
 /* main4 */
 .main4_left{
-    min-width:100%;
-    width : 60%;
+    min-width:80%;
+    width : 80%;
     position: absolute;
     top: 84%;
-    left: 14%;
+    left: 18%;
     z-index: 300;
 }
 .main4L_box{
@@ -613,12 +616,19 @@ header a{
 }
 .main4_img{
     float: left;
-    width: calc(100vw - 400px);
+    width: calc(100vw - 200px);
 }
 .main4_rightT,.main4_rightB{
     margin-left: -12px;
 }
-
+.hero-video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* .main4_bot {
+    display: none;
+} */
 
 /* main5 */
 .main5_img{
@@ -1000,10 +1010,11 @@ header a{
     left: 48%;
     z-index: 999;
     width: 45%;
-    height: auto;
+    height: 90px;
 }
 .main9_sOrder span{
     font-size: 28px;
+    margin-left: 15px;
 }
 .main9_sOrder>span>span{
     font-weight: 700;

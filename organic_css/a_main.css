@@ -37,7 +37,7 @@ h3{
 }
 .container{
 	width: 100%;
-	padding: 60px 0;
+	padding: 80px 0;
 }
 .container_inner{
 	width: 70%;
@@ -160,7 +160,7 @@ nav{
 
 /* */
 .container_1{
-	height: 610px;
+	height: 650px;
 }
 .swiper-container {
 	width: 100%;
@@ -221,6 +221,9 @@ nav{
 	width: 100%;
 	height: 250px;
 }
+.product_name{
+	font-size: 14px;
+}
 .product_price{
 	display: block;
 }
@@ -242,6 +245,7 @@ a:hover .product_name{
 /*  */
 .container_2{
 	height: 700px;
+	padding: 0 0 80px 0;
 }
 .con2_contents{
 	float: left;
@@ -292,9 +296,10 @@ a:hover .product_name{
 
 /*  */
 .container_3{
-	height: 720px;
+	height: 600px;
 	overflow: hidden;
-	margin-top: 10px;
+	padding: 0;
+	margin-top: 60px;
 }
 .container3_inner{
 	width: 100%;
@@ -305,7 +310,7 @@ a:hover .product_name{
 	height: 600px;
 	overflow: hidden;
 }
-.container3_inner a img{
+.container3_inner img{
 	width: 100vw;
 	height: 100%;
 	object-position: 50% 50%;
@@ -315,7 +320,7 @@ a:hover .product_name{
 
 /*  */
 .container_4{
-	height: 820px;
+	height: 900px;
 }
 .con4_contents .content{
 	float: left;
@@ -360,9 +365,10 @@ a:hover .product_name{
 	text-align: left;
 }
 .con6_left{
-	width: 30%;
+	width: 40%;
 	height: 100%;
 	float: left;
+	padding-right: 60px;
 }
 .con6_left h3{
 	float: left;
@@ -398,7 +404,7 @@ a:hover .product_name{
 }
 .con6_left a{
 	float: left;
-	max-width: 420px;
+	width: 80%;
 	font-size: 13px;
 	color: #666;
 	white-space: nowrap;
@@ -414,14 +420,35 @@ a:hover .product_name{
 	color: #8f8f8f;
 }
 .con6_bar{
-	margin: 0 60px;
+	/* margin: 0 60px; */
 	width: 1px;
 	height: 180px;
 	background-color: #8f8f8f;
 	float: left;
 	margin-top: -6px;
 }
+.con6_right{
+	width: 59%;
+	float: left;
+	padding-left: 60px;
+}
 
+.con6_right ul{
+	margin-top: 12px;
+	width: 100%;
+}
+.snsLogo{
+	width: calc(100% / 5);
+	float: left;
+
+}
+.snsLogo:first-child{
+	margin-left: 0;
+}
+.snsLogo img{
+	width: 60%;
+	height: 60%;
+}
 
 
 /*  */
@@ -451,6 +478,9 @@ footer{
 	color: #333;
 }
 
+
+
+
 @media screen and (max-width:1300px){
 	/*  */
 
@@ -469,7 +499,9 @@ footer{
 		margin-top: -20px;
 		color: #000;
 	}
-
+	.con6_left a{
+		width: 50%;
+	}
 
 }
 
@@ -477,7 +509,7 @@ footer{
 @media screen and (max-width:1150px){
 	/*  */
 	.container_4{
-		height: 1100px;
+		height: 1300px;
 	}
 	.con4_contents .content{
 		float: left;
@@ -500,9 +532,38 @@ footer{
 		margin-top: -20px;
 		color: #000;
 	}
-
+	.snsLogo img{
+		width: 80%;
+		height: 80%;
+	}
 
 }
+
+@media screen and (max-width:900px){
+  .navContainer{
+    width: 75%;
+  }
+  .logo{
+    width: 8%;
+    height: 100px;
+    float: left;
+  
+  }
+  .nav_item {
+    font-size: 15px;
+  }
+ 
+  .navIcon>ul>li {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  .navIcon{
+    width: 15%;
+  }
+
+	
+}
+
 
 @media screen and (max-width:840px){
 	.container_2{
@@ -557,7 +618,7 @@ footer{
 	
 	/*  */
 	.container_4{
-		height: 1400px;
+		height: 1600px;
 	}
 	.con4_contents .content{
 		float: left;
@@ -583,10 +644,58 @@ footer{
 	}
 }
 
+@media screen and (max-width:760px){
+  .navContainer{
+    width: 100%;
+  }
+  .logo{
+    width: 100%;
+    height: 100px;
+    float: left;
+    margin: 0 auto;
+  }
+  .logo>a{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .logo>a>img{
+    padding: 0;
+  }
+  .navIcon{
+    display: none;
+	}
+
+	.container_3{
+		padding-top: 80px;
+	}
+	/*  */
+	.container_6{
+		height: 420px;
+		padding: 50px 0 50px 0;
+	}
+	.con6_left{
+		width: 100%;
+		height: 50%;
+		padding-right: 0;
+	}
+	.con6_bar{
+		display: none;
+	}
+	.con6_right{
+		width: 100%;
+		padding-top: 20px;
+		padding-left: 0;
+	}
+
+}
 @media screen and (max-width:600px){
+	
 	/*  */
 	.container_4{
-		height: 2800px;
+		height: 3000px;
 	}
 	.con4_contents .content{
 		float: left;

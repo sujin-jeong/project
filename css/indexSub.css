@@ -271,7 +271,10 @@ main {
 	width: 63px;
 	margin: 0 auto;
 }
-
+.xbtn3{
+	height: 200px;
+	line-height: 200px;
+}
 
 
 /* img_modal*/
@@ -407,30 +410,9 @@ main {
 }
 
 
+.display_none{
+	display: none;
+}
 
-
-
-/* @media screen and (max-width: 50em) {
-	
-	.content--intro .content__inner,
-	.demo-4 .content__inner {
-		padding-top: 12em;
-	}
-	.content__title {
-		font-size: 2em;
-	}
-	.demo {
-		padding: 0;
-		margin: 0;
-	}
-	.menu__item {
-		margin: 0.5em 0;
-		font-size: 1.5em;
-	}
-	.content__text {
-		padding: 1em;
-		font-size: 1em;
-	}
-} */
 
 
