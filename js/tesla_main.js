@@ -37,10 +37,12 @@ $(function(){
 							if(swiper.previousIndex == 0 && !swiperBegin){
 								$('.title_text2-1 .title_text').addClass('right')
 								$('.title_text2-1').animate({'margin-left':'44%'})
+								$('.title_text2-1').animate({'margin-left':'calc(50% - 100px)'})
 							}else if(swiper.previousIndex == 2 && !swiperBegin){
 								$('.title_text2-1').addClass('display_none')
 								$('.title_text2-2').removeClass('display_none')
 								$('.title_text2-2').animate({'margin-left':'45%'})
+								$('.title_text2-1').animate({'margin-left':'calc(50% - 100px)'})
 							}
 						}
 						else if(swiper.activeIndex == 0){

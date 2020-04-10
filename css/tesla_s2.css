@@ -147,7 +147,6 @@
 	.main3T_box{
 		width: 80%;
 	}
-
 }
 
 @media screen and (max-width:1150px){
@@ -167,8 +166,6 @@
 	.main1_order {
 		width: 0%;
 	}
-
-
 }
 @media screen and (max-width:975px){
 	.navboxIn{
