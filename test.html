@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+	</head>
+	<body style="height:2000px;">
+		<script>
+			$('html').on('mousewheel DOMMouseScroll', function(e) {
+				alert('마우스 휠')
+			})
+			$('html').on('touchmove',function(e){
+				alert('마우스 터치');
+			})
+		</script>
+	</body>
+</html>

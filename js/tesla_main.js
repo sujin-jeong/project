@@ -186,16 +186,14 @@ $(window).resize(function(){
 	$('.title_text2-1').css('margin-left',center+"px")
 	$('.title_text2-2').css('margin-left',center+"px")
 
-	$("#cameraSlider").slider({
-		value: 2,
-		min: 1,
-		max: 3,
-		step: 1,
-		slide: function(event, ui) {
-			cameramen = ui.value;
-			return calcTotal();
-		}
-	});
+	
+
+	$('html').on('mousewheel DOMMouseScroll', function(e) {
+		alert('마우스 휠')
+	})
+	$('html').on('touchmove',function(e){
+		alert('마우스 터치');
+	})
 
 
 })
