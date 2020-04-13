@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 *{
     padding:0;
     margin:0;
@@ -21,14 +22,22 @@ button{
 		border: none;
 		cursor: pointer;
 }
+
 body {
 		font-family: 'Montserrat', sans-serif;
 }
+/* body::-webkit-scrollbar {
+	display: none;
+} */
+
+
 /*  */
 .swiper-container {
 	width: 100%;
 	height: 100%;
 }
+
+
 /* header */
 header{
 	z-index: 30;
@@ -56,6 +65,7 @@ header img{
 	height: 100%;
 	margin: 0 auto;
 	float: left;
+	
 }
 .navli{
 	display:inline-block;
@@ -70,6 +80,9 @@ header img{
 header a{
 	color:#fff;
 }
+
+
+
 /*  */
 .main_text{
 	z-index: 100;
@@ -143,7 +156,9 @@ header a{
 .title_text2-2{
 	width: 200px;
 	margin-left: calc(50% - 100px);
+
 }
+
 /* main1 */
 .parallax-bg {
 	position: absolute;
@@ -161,6 +176,8 @@ header a{
 .swiper-slide{
 	background-color: transparent;
 }
+
+
 /*  */
 .main2{
 	position: absolute;
@@ -174,7 +191,10 @@ header a{
 .hero-video{
 	width: 100vw;
 	height:auto;
+
 }
+
+
 /*  */
 .main3{
 	position: absolute;
@@ -185,15 +205,11 @@ header a{
 	width: 100%;
 	height: 100%;
 }
-.main3_img{
-	width: 100%;
-	height: 100%;
-}
 .main3 img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	width: 100vw;
+	height: auto;
 }
+
 
 /*  */
 .main4{
@@ -204,14 +220,9 @@ header a{
 	width: 100%;
 	height: 100%;
 }
-.main4_img{
-	width: 100%;
-	height: calc(100% - 136px);
-}
 .main4 img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	width: 100vw;
+	height: auto;
 }
 .footer{
 	position: absolute;
@@ -235,6 +246,10 @@ header a{
 	 font-size: 14px;
 	 text-align: center;
 }
+
+
+
+
 /*  */
 .nav_left{
 	position: fixed;
@@ -275,15 +290,15 @@ header a{
 
 /* swiper */
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-	bottom: 60px;
+	bottom: 10px;
 	left: -11px;
 	width: 100%;
 }
-/* .swiper-pagination-bullets{
+.swiper-pagination-bullets{
 	position: absolute;
 	top: 680px;
 	left: 0;
-} */
+}
 .swiper-pagination-bullet{
 	
 	background-color: transparent;
@@ -338,24 +353,5 @@ header a{
 		height:100%;
 		object-fit: cover;
 	}
-}
-@media screen and (max-width:1150px){
-	.navbox{
-		width: 90%;
-	}
-}
-@media screen and (max-width:975px){
-	.navbox{
-		width: 100%;
-	}
-}
-@media screen and (max-width:640px){
-	.navbox{
-		display: none;
-	}
-	.logow{
-		width: 30%;
-		height: 32%;
-		margin: 10% 33%;
-	}
+
 }

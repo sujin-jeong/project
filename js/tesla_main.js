@@ -1,3 +1,4 @@
+
 var win_h = $(window).height();
 var swiperBegin = true;
 // 스와이퍼가 시작하는게 true, 스와이퍼가 진행중이면 false
@@ -35,20 +36,35 @@ $(function(){
 							$('.title_text3').addClass('opacity-0')
 							$('.title_text2-1').removeClass('opacity-0')
 							if(swiper.previousIndex == 0 && !swiperBegin){
-								$('.title_text2-1 .title_text').addClass('right')
-								$('.title_text2-1').animate({'margin-left':'44%'})
-								$('.title_text2-1').animate({'margin-left':'calc(50% - 100px)'})
+								//중간이 되도록하는 margin-left의 값
+								var beforeMarginLeft = $('.title_text2-1').css('margin-left');
+								//첫번째 섹션에서 2번째 섹션으로 넘어오는 왔을 때 임의의 지점을 설정(화면 크기에 따라 44%가 오른쪽이 아닐수 있기 때문에 이부분에 대한 보완이 필요 )
+								var dis = getStartPos(beforeMarginLeft,200,1)
+								$('.title_text2-1').css('margin-left',dis)
+								//임의의 지점에서 중간으로 오도록 애니메이션
+								$('.title_text2-1').animate({'margin-left':beforeMarginLeft})
 							}else if(swiper.previousIndex == 2 && !swiperBegin){
 								$('.title_text2-1').addClass('display_none')
 								$('.title_text2-2').removeClass('display_none')
-								$('.title_text2-2').animate({'margin-left':'45%'})
-								$('.title_text2-1').animate({'margin-left':'calc(50% - 100px)'})
+								//중간이 되도록하는 margin-left의 값
+								var beforeMarginLeft = $('.title_text2-2').css('margin-left');
+								//세번째 섹션에서 2번째 섹션으로 넘어오는 왔을 때 임의의 지점을 설정(화면 크기에 따라 30%가 왼쪽이 아닐수 있기 때문에 이부분에 대한 보완이 필요 )
+								var dis = getStartPos(beforeMarginLeft,200,-1)
+								$('.title_text2-2').css('margin-left',dis)
+								//임의의 지점에서 중간으로 오도록 애니메이션
+								$('.title_text2-2').animate({'margin-left':beforeMarginLeft})
 							}
 						}
 						else if(swiper.activeIndex == 0){
 							$('.main_btn2 button:last-child').removeClass('display_none')
 							$('.title_text1').removeClass('opacity-0')
-							$('.title_text1').animate({'margin-left':'20%'})
+							//중간이 되도록하는 left의 값(포지션이 absolute여서)
+							var beforeMarginLeft = $('.title_text1').css('left');
+							//2번째 섹션에서 1번째 섹션으로 넘어오는 왔을 때 임의의 지점을 설정(화면 크기에 따라 30%가 왼쪽이 아닐수 있기 때문에 이부분에 대한 보완이 필요 )
+							var dis = getStartPos(beforeMarginLeft,200,-1)
+							$('.title_text1').css('left',dis)
+							//임의의 지점에서 중간으로 오도록 애니메이션
+							$('.title_text1').animate({'left':beforeMarginLeft})
 							$('.title_text2-1').addClass('opacity-0')
 							$('.title_text2-1').removeClass('display_none')
 							$('.title_text3').addClass('opacity-0')
@@ -57,7 +73,13 @@ $(function(){
 						else{
 							$('.main_btn2 button:last-child').removeClass('display_none')
 							$('.title_text3').removeClass('opacity-0')
-							$('.title_text3').animate({'margin-right':'20%'})
+							//중간이 되도록하는 right의 값(포지션이 absolute여서)
+							var beforeMarginLeft = $('.title_text3').css('right');
+							//
+							var dis = getStartPos(beforeMarginLeft,200,-1)
+							$('.title_text3').css('right',dis)
+							////임의의 지점에서 중간으로 오도록 애니메이션
+							$('.title_text3').animate({'right':beforeMarginLeft})
 							$('.title_text2-1').addClass('opacity-0')
 							$('.title_text2-1').removeClass('display_none')
 							$('.title_text1').addClass('opacity-0')
@@ -139,5 +161,41 @@ function getPosNow(sectionPos){
 	})
 	return parseInt(pos);
 }
+//왼쪽에서 가운데 또는 오른쪽에서 가운데로 본내야 하는데 
+//왼쪽이나 오른쪽 기준을 %로 하면 화면 비율에 따라 원하지 않은 결과가 나올 수 있음
+//이를 방지하기 위에서 가운데를 기준(center)으로 원하는 거리px(distant)만큼 떨어진
+//위치를 왼쪽이나 오른쪽(direction)을 지정해서 위치를 알려주는 함수
+//direction이 1이면 오른쪽 -1이면 왼쪽
+function getStartPos(center, distant, direction){
+	if(center.indexOf("px")>-1){
+		center = center.substr(0,center.length-2);
+	}
+	var result = parseInt(center);
+	if(direction == 1){
+		result = result + distant;
+	}else if(direction == -1){
+		result = result - distant;
+	}
+	return result + "px";
+}
+//화면 크기가 변할 경우 가운데 위치를 재조정
+$(window).resize(function(){
+	var center = window.innerWidth / 2 - 100;
+	$('.title_text3').css('right',center+"px")
+	$('.title_text1').css('left',center+"px")
+	$('.title_text2-1').css('margin-left',center+"px")
+	$('.title_text2-2').css('margin-left',center+"px")
+
+	$("#cameraSlider").slider({
+		value: 2,
+		min: 1,
+		max: 3,
+		step: 1,
+		slide: function(event, ui) {
+			cameramen = ui.value;
+			return calcTotal();
+		}
+	});
 
 
+})
