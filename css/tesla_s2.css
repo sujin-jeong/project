@@ -147,6 +147,10 @@
 	.main3T_box{
 		width: 80%;
 	}
+	.btn8 {
+    float: left;
+    width: 40%;
+	}
 }
 
 @media screen and (max-width:1150px){
@@ -182,9 +186,55 @@
 	.main3T_box{
 		width: 95%;
 	}
+	.main8_sub {
+		font-size: 14px;
+		position: absolute;
+    top: 230px;
+		left: 50px;
+	}
+	.main8_subR{
+		margin-left: 20px;
+	}
+	.main8_extendL{
+		margin-top: 0;
+		margin-left: 100px;
+		font-size: 14px;
+	}
+	.main8_extendR {
+    float: left;
+    margin-left: 100px;
+    margin-top: 0px;
+		padding-bottom: 0px;
+		font-size: 14px;
+	}
+	.main9_img {
+    width:100%;
+    height: calc(100% - 300px);
+    float: none;
+	}
+	.main9_left {
+    float: none;
+    width: 100%;
+    height: 185px;
+    position: relative;
+	}
+	.main9_sOrder {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: 999;
+    width: 50%;
+		height: 90px;
+	}
+	.main9_sOrder>span{
+		text-align: center;
+		margin-left: 0px;
+		display: block;
+		height: 20px;
+	}
 
 }
-@media screen and (max-width:640px){
+@media screen and (max-width:650px){
 	picture>img{
     object-position: center 35%;
 }
@@ -198,7 +248,7 @@
 	.main1_title{
 		position: absolute;
 		top: 20%;
-		left: 38%;
+		left: calc(50% - 81px);
 		text-align : center;
 		color:#fff;
 		height: 73px;
@@ -264,11 +314,11 @@
 	}
 	.collision{
 		left: 16%;
-		top: 32%;
+		top: 40%;
 	}
 	.protection{
 		left: 60%;
-		top: 20%;
+		top: 28%;
 	}
 	.protection span{
 		position: absolute;
@@ -285,33 +335,35 @@
 		top: 90%;
 		left: 10px;
 	}
-
+	.btn8 {
+    float: left;
+		width: 70%;
+	}
+	.btn8:first-child{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
 	/* main3 */
 	.fff_boxB{
-		height: 300px;
+		height: 230px;
 	}
 
 	.main3_top{
-		top: 50%;
+		top: 56%;
 		left: 0%;
 	}
 	.main3T_box{
 		width: 100%;
-		height: auto;
+		height: 100%;
 		display: flex;
 		position: relative;
 		margin : 0 auto;
 	}
-	.main3_bot{
-		width: 100%;
-		height: 220px;
-	}
-	.km_title{
-		text-align: center;
-	}
+
+
 	.main3_img{
 		width: 100%;
-		height: calc(100vh - 300px);
+		height: calc(100vh - 230px);
 		overflow: hidden;
 	}
 	.main3_img img{
@@ -341,5 +393,84 @@
 	.sub640{
 		display: block;
 		text-align: center;
+	}
+	.main4_left {
+		min-width: 100%;
+	}
+	.main4L_box{
+		width: 90%;
+	}
+	.main4L_box .subT span{
+		display: none;
+	}
+	.main7T_box {
+		width: 90%;
+	}
+	.main8_sub {
+		font-size: 14px;
+		position: absolute;
+    top: 240px;
+		left: -140px;
+	}
+	.main8_subR{
+		margin-left: 40px;
+	}
+	.main8_extendL{
+		margin-top: 0;
+		margin-left: 60px;
+		font-size: 14px;
+	}
+	.main8_extendR {
+    float: left;
+    margin-left: 60px;
+    margin-top: 0px;
+		padding-bottom: 0px;
+		font-size: 14px;
+	}
+	.main8_extendBtn {
+    left: 0px;
+	}
+	.main8_extendText {
+		left: 40px;
+	}
+	.main8_closeBtn {
+    left: calc(50% - 30px);
+	}
+	header img {
+    width: 20%;
+    height: auto;
+    margin: 20px 0 0 20px;
+		float: none;
+	}
+}
+
+@media screen and (max-width:550px){
+	.fff_botS>div>span{
+		display: none;
+	}
+	.container .titleB {
+		font-size: 20px;
+		line-height: 42px;
+	}
+	.main3T .speedometer_icon img:first-child{
+		width: 120%;
+	}
+	.container2 {
+    padding: 5px 20px 0 20px;
+	}
+	.container1 {
+			padding: 5px 20px 0 0;
+	}
+	.container3 {
+    padding: 5px 20px 0 20px;
+	}
+	.subT{
+		margin-top: 0;
+	}
+	.footer_infor span{
+		font-size: 12px;
+	}
+	.footer_nav a {
+    padding: 0 4px;
 	}
 }
