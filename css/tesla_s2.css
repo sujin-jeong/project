@@ -280,7 +280,7 @@
 	.main1_sub .loadspace_container{
     border-left : 1px solid #000;
     border-right : 1px solid #000;
-    padding : 0 40px;
+    padding : 0 20px;
 	}
 	.main1_sub .titleB{
     font-size : 23px;
@@ -345,7 +345,7 @@
 	}
 	/* main3 */
 	.fff_boxB{
-		height: 230px;
+		height: 200px;
 	}
 
 	.main3_top{
@@ -359,11 +359,17 @@
 		position: relative;
 		margin : 0 auto;
 	}
-
+	.mainB_left {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 60px 20px 30px 0;
+    position: relative;
+	}
 
 	.main3_img{
 		width: 100%;
-		height: calc(100vh - 230px);
+		height: calc(100vh - 200px);
 		overflow: hidden;
 	}
 	.main3_img img{
@@ -392,6 +398,9 @@
 	}
 	.sub640{
 		display: block;
+		text-align: center;
+	}
+	.main3T .km_title{
 		text-align: center;
 	}
 	.main4_left {
@@ -444,7 +453,7 @@
 	}
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:500px){
 	.fff_botS>div>span{
 		display: none;
 	}
@@ -473,4 +482,8 @@
 	.footer_nav a {
     padding: 0 4px;
 	}
+	.main1_sub .titleB {
+    font-size: 20px;
 }
+}
+
