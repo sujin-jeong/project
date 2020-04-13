@@ -3,14 +3,40 @@ var win_h = $(window).height();
 var swiperBegin = true;
 // 스와이퍼가 시작하는게 true, 스와이퍼가 진행중이면 false
 
+var mstartX = 0, mendX = 0,mstartY = 0, mendY = 0;
 $(function(){
-
-	$('html').on('mousewheel DOMMouseScroll', function(e) {
-		alert('마우스 휠')
-	})
-	$('html').on('touchmove',function(e){
-		alert('마우스 터치');
-	})
+	
+	
+  $(".section").on('mousedown',function(event){
+      mstartX = event.pageX;
+      mstartY = event.pageY;
+  });
+  $(".section").on('mouseup',function(event){
+      mendX=event.pageX;
+      mendY=event.pageY;
+    if(mstartY-mendY>50){
+      console.log('위로')    
+	 	}else if(mendY-mstartY>50){
+      console.log('아래로')    
+	 	}
+		var sectionPos = parseInt($(this).attr("data-index"));
+		var pos;
+		if(mstartY-mendY>50){
+			$("html,body").stop().animate({scrollTop:sectionPos - win_h});
+			pos=getPosNow(sectionPos - win_h);
+			if(pos!=-1)
+				$('.navLeft_tap').eq(pos).click();
+			return false;
+		}
+		else if(mendY-mstartY>50){
+			$("html,body").stop().animate({scrollTop:sectionPos + win_h});
+			//navLeft_tap을 클릭하면 sectionPos + win_h 번째로 넘어감
+			pos=getPosNow(sectionPos + win_h);
+			if(pos!=-1)
+				$('.navLeft_tap').eq(pos).click();
+			return false;
+		}
+  });
 
 	setTimeout(function(){
 	
