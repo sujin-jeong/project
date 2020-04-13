@@ -5,11 +5,13 @@ var swiperBegin = true;
 
 $(function(){
 
-	
+	$('html').on('mousewheel DOMMouseScroll', function(e) {
+		alert('마우스 휠')
+	})
+	$('html').on('touchmove',function(e){
+		alert('마우스 터치');
+	})
 
-
-
-	
 	setTimeout(function(){
 	
 		$('.parallax-bg').animate({width:'210%','margin-left':'-54.5%'},1000,function(){
@@ -187,13 +189,5 @@ $(window).resize(function(){
 	$('.title_text2-2').css('margin-left',center+"px")
 
 	
-
-	$('html').on('mousewheel DOMMouseScroll', function(e) {
-		alert('마우스 휠')
-	})
-	$('html').on('touchmove',function(e){
-		alert('마우스 터치');
-	})
-
 
 })
