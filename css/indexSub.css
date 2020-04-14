@@ -98,7 +98,7 @@ main {
 }
 
 .content--fixed {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	background-color: #f1f1f1;
@@ -106,7 +106,7 @@ main {
 	background-size: cover;
 }
 
-.fixed2{
+.fixed2, .fixed1{
 	height: 100%;
 }
 
@@ -161,24 +161,19 @@ main {
 	z-index: 10;
 	margin: -5px 0 0 0; 
 }
-
 .shape {
 	height: 100vh;
 	width: 100%;
 	display: block;
 }
 
-
-
-
 /* fixed3 */
-.s2, .s3{
+.s1, .s2, .s3{
 	justify-content: start;
 }
 .fixed3{
 	height: 100%;
 }
-
 .grid3::after{
 	display: block;
 	clear: both;
@@ -205,9 +200,7 @@ main {
 	filter: grayscale(100%)
 }
 
-
 /* enter */
-
 .enter{    
 	margin-top: 6vh;
 	margin-left: 10px;
@@ -241,10 +234,7 @@ main {
 	display: inline-block;
 }
 
-
-
 /* xbtn */
-
 .xbtn{
 	width: 63px;
 	margin: 0 auto;
@@ -254,9 +244,7 @@ main {
 	line-height: 200px;
 }
 
-
 /* img_modal*/
-
 .img_modal{
 	background-color: #000;
 	display: none;
@@ -272,7 +260,21 @@ main {
 .img_modal>img{
 	height: 100vh;
 	width: auto;
-	
+}
+.img_modal1{
+	background-color: #f1f1f1;
+	display: none;
+	z-index: 1200;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	justify-content: center;
+}
+.img_modal1>img{
+ 
 }
 .img_close{
 	width: 80px;
@@ -301,6 +303,14 @@ main {
 	position: absolute;
 	top: 20px;
 	right: 30px;
+}
+
+.img_close1>span{
+	width: 1px;
+	height: 24px;
+	background-color:#000;
+	display: inline-block;
+	cursor: pointer;
 }
 
 
@@ -348,6 +358,11 @@ main {
 		position: absolute;
 		width: calc(100% / 2);
 	}
+	.grid_item1{
+		padding: 5px;
+		position: absolute;
+		width: calc(100% / 2);
+	}
 	.slide__title {
 		position: relative;
 		font-size: 60px;
@@ -360,6 +375,11 @@ main {
 
 @media screen and (max-width: 480px){
 	.grid_item{
+		padding: 5px;
+		position: absolute;
+		width: calc(100% / 1);
+	}
+	.grid_item1{
 		padding: 5px;
 		position: absolute;
 		width: calc(100% / 1);
