@@ -235,19 +235,8 @@
 		//img_modal 클릭했을 때 img 순서 찾아서 src 불러내기
 		var imgSrc = $(this).find('img').attr('src');
 		$('.img_modal1 img').attr('src', imgSrc)
+		imgModal()
 		//a태그 막기
-		var imgH = $('.img_modal1 img').css('height');
-      imgH = parseInt(imgH.substr(0,imgH.length-2))
-      var winH = window.innerHeight;
-      var marginH = (winH - imgH)/2;
-      $('.img_modal1 img').css('margin-top', marginH)
-      
-		var imgW = $('.img_modal1 img').css('width');
-		imgW = parseInt(imgW.substr(0,imgW.length-2))
-		var winW = window.innerWidth;
-		var marginW = (winW - imgW)/2;
-		console.log(marginW)
-		$('.img_modal1 img').css('margin-left', marginW)
 		return false;
 	})
 
@@ -343,6 +332,33 @@ function enterContent3(sec){
 	//$('.content--intro3').css('height', window.innerHeight + 'px')
 	},sec)
 }
+function imgModal(){
+	//이미지 높이 가져오기
+	var imgH = $('.img_modal1 img').css('height');
+	//이미지 높이를 px 제거하여 숫자로
+	imgH = parseInt(imgH.substr(0,imgH.length-2))
+	//브라우저 높이 가져오기  
+	var winH = window.innerHeight;
+	var marginH = 0;
+	//브라우저 높이가 이미지 높이보다 큰 경우
+	if(winH > imgH){
+		marginH = (winH - imgH)/2;
+	}
+	  $('.img_modal1 img').css('margin-top', marginH)
+	//이미지 가로 가져오기
+	var imgW = $('.img_modal1 img').css('width');
+	//이미지 가로를 px 제거하여 숫자로
+	imgW = parseInt(imgW.substr(0,imgW.length-2))
+	//브라우저 가로 가져오기
+	var winW = window.innerWidth;
+	var marginW = 0;
+	if(winW < imgW){
+		$('.img_modal1 img').css('width', winW)
+	}else{
+		marginW = (winW-imgW)/2
+	}
+	$('.img_modal1 img').css('margin-left', marginW)
+}
 
 $(window).resize(function() { 
 	drawGrid();;
@@ -350,16 +366,5 @@ $(window).resize(function() {
 	enterContent1(0)
 	enterContent3(0)
 	enterContent2(0)
-	var imgH = $('.img_modal1 img').css('height');
-	imgH = parseInt(imgH.substr(0,imgH.length-2))
-	var winH = window.innerHeight;
-	var marginH = (winH - imgH)/2;
-	$('.img_modal1 img').css('margin-top', marginH)
-	
-	var imgW = $('.img_modal1 img').css('width');
-	imgW = parseInt(imgW.substr(0,imgW.length-2))
-	var winW = window.innerWidth;
-	var marginW = (winW - imgW)/2;
-	console.log(marginW)
-	$('.img_modal1 img').css('margin-left', marginW)
+	imgModal()
 });
