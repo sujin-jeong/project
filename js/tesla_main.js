@@ -5,35 +5,62 @@ var swiperBegin = true;
 
 var startX,startY, endX,endY;
 $(function(){
+	var swiper = new Swiper('.section-container', {
+		direction: 'vertical',
+		on : {
+			slideChange : function(){
+				if(swiper.activeIndex == 0){
+					$('.main_btn2').removeClass('display_none')
+					$('.main1_text').removeClass('display_none')
+					
+				}
+				else{
+					$('.main_btn2').addClass('display_none')
+					$('.main1_text').addClass('display_none')
+					
+				}
+			
+		}
+		}
+	});
 	
-	
-  $(".section").on('touchstart',function(event){
+  /*$(".section").on('touchstart',function(event){
 		startX = event.originalEvent.changedTouches[0].screenX;
 		startY = event.originalEvent.changedTouches[0].screenY;
   });
   $(".section").on('touchend',function(event){
 		endX=event.originalEvent.changedTouches[0].screenX;
 	 	endY=event.originalEvent.changedTouches[0].screenY;
-   
+   	
 		var sectionPos = parseInt($(this).attr("data-index"));
+		console.log(sectionPos)
 		var pos;
-		if(startY-endY>50){
+		if(startY-endY>10){
 			$("html,body").stop().animate({scrollTop:sectionPos - win_h});
 			pos=getPosNow(sectionPos - win_h);
 			if(pos!=-1)
 				$('.navLeft_tap').eq(pos).click();
-			return false;
+			console.log("위로"+pos)
+			
+			//return false;
 		}
-		else if(startY-endY>50){
+		else if(endY-startY>10){
 			$("html,body").stop().animate({scrollTop:sectionPos + win_h});
 			//navLeft_tap을 클릭하면 sectionPos + win_h 번째로 넘어감
 			pos=getPosNow(sectionPos + win_h);
 			if(pos!=-1)
 				$('.navLeft_tap').eq(pos).click();
-			return false;
+			console.log("아래"+pos)
+			//return false;
 		}
+		else{
+			pos=getPosNow(sectionPos);
+			if(pos!=-1)
+				$('.navLeft_tap').eq(pos).click();
+		}
+//		alert(endY +"," + startY);
   });
-
+	*/
 	setTimeout(function(){
 	
 		$('.parallax-bg').animate({width:'210%','margin-left':'-54.5%'},1000,function(){
@@ -41,10 +68,10 @@ $(function(){
 			var swiper = new Swiper('.swiper-container', {
 				speed: 600,
 				parallax: true,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
+//				pagination: {
+//					el: '.swiper-pagination',
+//					clickable: true,
+//				},
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',

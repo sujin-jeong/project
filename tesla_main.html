@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/tesla_main.css">
 		<script src="https://kit.fontawesome.com/58edaa3f81.js" crossorigin="anonymous"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/swiper.js"></script>
     <script src="js/tesla_main.js"></script>
@@ -43,7 +43,9 @@
 			</li>
 		</ul>
 	</header>
-	<div class="swiper-container main1 section">
+	<div class="section-container" style="height:100%">
+	<div class="swiper-wrapper">
+	<div class="swiper-container main1 section swiper-slide">
 		<div class="parallax-bg" style="background-image:url(img/tesla/tesla_main.jpg)" data-swiper-parallax="-52%">
 		</div>
 		<div class="swiper-wrapper">
@@ -57,7 +59,7 @@
 		<!-- Add Pagination -->
 		<div class="swiper-pagination"></div>
 	</div>
-	<section class="main2 section">
+	<section class="main2 section swiper-slide">
 		<video class="hero-video hero-asset" preload="auto" playsinline="" data-autoplay-desktop="true" data-autoplay-portrait="true" data-autoplay-mobile="true" muted="" loop="" poster="" data-poster-desktop="" data-poster-mobile="" data-poster-portrait="" data-src-desktop="https://www.tesla.com/sites/tesla/files/curatedmedia/experience-hero-desktop.mp4" data-src-mobile="https://www.tesla.com/sites/tesla/files/curatedmedia/experience-hero-mobile.mp4" data-src-portrait="https://www.tesla.com/sites/tesla/files/curatedmedia/experience-hero-desktop.mp4" data-object-fit="cover" src="https://www.tesla.com/sites/tesla/files/curatedmedia/experience-hero-desktop.mp4" autoplay="" data-loaded="true">
 		</video>
 		<div class="main_text main2_text">
@@ -67,7 +69,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="main3 section">
+	<section class="main3 section swiper-slide">
 		<img src="img/tesla/tesla_main3.jpg">
 		<div class="main_text main3_text">
 			<div class="title_text">모든 전력을 공급</div>
@@ -77,7 +79,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="main4 section">
+	<section class="main4 section swiper-slide">
 		<div class="main4_img">
 			<img src="img/tesla/tesla_main4.jpg">
 		</div>
@@ -102,6 +104,8 @@
 			</div>
 		</div>
 	</section>
+	</div>
+	</div>
 	<ul class="nav_left">
 		<li class="navLeft_li">
 			<div class="navLeft_tap">
