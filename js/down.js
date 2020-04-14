@@ -247,7 +247,7 @@
 
 
 	$('.content--intro1 .enter').click(function(){
-		enterContent2(1100)
+		enterContent1(1100)
 	})
 	$('.xbtn1 .close').click(function(){
 		$('.slides').removeAttr('style');
@@ -261,7 +261,7 @@
 	})
 
 	$('.content--intro3 .enter').click(function(){
-		enterContent2(1100)
+		enterContent3(1100)
 	})
 	$('.xbtn3 .close').click(function(){
 		$('.slides').removeAttr('style');
