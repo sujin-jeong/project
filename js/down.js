@@ -242,6 +242,13 @@
 	});
 
 
+
+	$('.content--intro1 .enter').click(function(){
+		enterContent2(1100)
+	})
+	$('.xbtn1 .close').click(function(){
+		$('.slides').removeAttr('style');
+	})
 	//page2 grid event
 	$('.content--intro2 .enter').click(function(){
 		enterContent2(1100)
@@ -249,10 +256,9 @@
 	$('.xbtn2 .close').click(function(){
 		$('.slides').removeAttr('style');
 	})
-	
-	//page3 grid event
+
 	$('.content--intro3 .enter').click(function(){
-		enterContent3(1100);
+		enterContent2(1100)
 	})
 	$('.xbtn3 .close').click(function(){
 		$('.slides').removeAttr('style');
@@ -260,6 +266,17 @@
 
 }
 
+function enterContent1(sec){
+	if($('.s1.slide--current').length == 0)
+		return 0;
+	var s2fixed2Height = $('.fixed1 .content_sub').css('height');
+	s2fixed2Height = s2fixed2Height.substr(0,s2fixed2Height.length-2);
+	s2fixed2Height = parseInt(s2fixed2Height)+35;
+	setTimeout(function(){
+	$('.slides').css('height', s2fixed2Height+'px');
+	$('.slides').css('overflow', 'hidden');
+	},sec)
+}
 
 function enterContent2(sec){
 	if($('.s2.slide--current').length == 0)
@@ -291,6 +308,7 @@ function enterContent3(sec){
 }
 
 $(window).resize(function() { 
+	enterContent1(0)
 	enterContent3(0)
 	enterContent2(0)
 	drawGrid();;

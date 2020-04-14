@@ -170,27 +170,6 @@ main {
 }
 
 
-/* fixed1 */
-.about_left{
-	width: 50%;
-	height: 100%;
-	float: left;
-}
-.about_right{
-	width: 50%;
-	height: 100%;
-	float: left;
-	background-color: burlywood;
-}
-.about_bar{
-	width: 20px;
-	height: 1px;
-	background-color: #000;
-	margin: 10px 0;
-}
-
-
-
 
 
 /* fixed3 */
