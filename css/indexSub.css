@@ -270,12 +270,9 @@ main {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	text-align: center;
 	justify-content: center;
 }
-.img_modal1>img{
- 
-}
+
 .img_close{
 	width: 80px;
 	height: 80px;
@@ -313,7 +310,6 @@ main {
 	cursor: pointer;
 }
 
-
 @media screen and (min-width: 1601px){
 	.content_sub{
 		width: 80%;
@@ -330,18 +326,13 @@ main {
 		height: 280px;
 		float: left;
 	}
-}
-
-@media screen and (max-width: 750px){
-	.img_modal{
-		background-color: #000;
-		width: 100vw;
-		height: 100vh;
-		z-index: 1200;
-		text-align: center;
-		justify-content: center;
-		display: none;
+	.grid_item1{
+		padding: 5px;
+		position: absolute;
+		width: calc(100% / 3);
 	}
+}
+@media screen and (max-width: 750px){
 	.img_modal>img{
 		height: 100vh;
 		width: 100vw;
@@ -372,7 +363,6 @@ main {
 		color: var(--color-stitle);
 	}
 }
-
 @media screen and (max-width: 480px){
 	.grid_item{
 		padding: 5px;
@@ -383,15 +373,6 @@ main {
 		padding: 5px;
 		position: absolute;
 		width: calc(100% / 1);
-	}
-	.img_modal{
-		background-color: #000;
-		width: 100vw;
-		height: 100vh;
-		z-index: 1200;
-		text-align: center;
-		justify-content: center;
-		display: none;
 	}
 	.img_modal>img{
 		height: auto;

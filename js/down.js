@@ -231,11 +231,23 @@
 	
 	$('.grid_item1').click(function(e){
 		e.preventDefault();
-		$('.img_modal1').css('display',"flex")
+		$('.img_modal1').css('display',"block")
 		//img_modal 클릭했을 때 img 순서 찾아서 src 불러내기
 		var imgSrc = $(this).find('img').attr('src');
 		$('.img_modal1 img').attr('src', imgSrc)
 		//a태그 막기
+		var imgH = $('.img_modal1 img').css('height');
+      imgH = parseInt(imgH.substr(0,imgH.length-2))
+      var winH = window.innerHeight;
+      var marginH = (winH - imgH)/2;
+      $('.img_modal1 img').css('margin-top', marginH)
+      
+		var imgW = $('.img_modal1 img').css('width');
+		imgW = parseInt(imgW.substr(0,imgW.length-2))
+		var winW = window.innerWidth;
+		var marginW = (winW - imgW)/2;
+		console.log(marginW)
+		$('.img_modal1 img').css('margin-left', marginW)
 		return false;
 	})
 
@@ -338,5 +350,16 @@ $(window).resize(function() {
 	enterContent1(0)
 	enterContent3(0)
 	enterContent2(0)
-
+	var imgH = $('.img_modal1 img').css('height');
+	imgH = parseInt(imgH.substr(0,imgH.length-2))
+	var winH = window.innerHeight;
+	var marginH = (winH - imgH)/2;
+	$('.img_modal1 img').css('margin-top', marginH)
+	
+	var imgW = $('.img_modal1 img').css('width');
+	imgW = parseInt(imgW.substr(0,imgW.length-2))
+	var winW = window.innerWidth;
+	var marginW = (winW - imgW)/2;
+	console.log(marginW)
+	$('.img_modal1 img').css('margin-left', marginW)
 });

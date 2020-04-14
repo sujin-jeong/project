@@ -12,6 +12,9 @@ function drawGrid(){
   }else if(window.innerWidth <= 750){
     cnt = 2;
   }
+  else if(window.innerWidth <= 1145){
+    cnt = 3;
+  }
   $('.grid_item').each(function(){
     //각 상자별 left 위치 계산
     //1열이면 0%, 2열이면 25%, 3열이면 50%, 4열이면 75%
@@ -58,6 +61,9 @@ function drawGrid1(){
     cnt = 1;
   }else if(window.innerWidth <= 750){
     cnt = 2;
+  }
+  else if(window.innerWidth <= 1145){
+    cnt = 3;
   }
   $('.grid_item1').each(function(){
     //각 상자별 left 위치 계산
