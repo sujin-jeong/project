@@ -240,6 +240,9 @@
 	$('.s2 .fixed2').on('scroll touchmove mousewheel', function(event) {
 		drawGrid();
 	});
+	$('.s1 .fixed1').on('scroll touchmove mousewheel', function(event) {
+		drawGrid1();
+	});
 
 
 
@@ -312,4 +315,5 @@ $(window).resize(function() {
 	enterContent3(0)
 	enterContent2(0)
 	drawGrid();;
+	drawGrid1();;
 });

@@ -127,13 +127,13 @@ main {
 }
 
 
-.grid{
+.grid,.grid1{
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
 }
 
-.grid_item{
+.grid_item,.grid_item1{
 	padding: 5px;
 	position: absolute;
 	width: calc(100% / 4);
