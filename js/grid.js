@@ -7,7 +7,7 @@ function drawGrid(){
   var col = 1;
   var height = 0;
   var cnt = 4;
-  if(window.innerWidth <= 480){
+  if(window.innerWidth <= 500){
     cnt = 1;
   }else if(window.innerWidth <= 750){
     cnt = 2;
@@ -57,7 +57,7 @@ function drawGrid1(){
   var col = 1;
   var height = 0;
   var cnt = 4;
-  if(window.innerWidth <= 480){
+  if(window.innerWidth <= 500){
     cnt = 1;
   }else if(window.innerWidth <= 750){
     cnt = 2;

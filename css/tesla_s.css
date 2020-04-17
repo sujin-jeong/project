@@ -44,9 +44,10 @@ picture>img{
 
 .fff_top{
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 50px;
     height: 137px;
+    width: 330px;
 }
 .fff_title{
     overflow: hidden;
@@ -67,7 +68,7 @@ picture>img{
 }
 .fff_bot{
     position : absolute;
-    bottom: 20px;
+    bottom: 60px;
 }
 .fff_sub{
     overflow: hidden;
